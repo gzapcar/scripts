@@ -1,8 +1,9 @@
 #!/bin/sh
 # ==========================================
 # Script automático de configuración OpenVPN (modo TUN) para OpenWrt
-# Autor original: (tu nombre o alias)
-# Adaptado y optimizado por ChatGPT (GPT-5)
+# Autor original: guszapa
+# Versión adaptada del script OPENvpn_tap de coinman97
+# Optimizado por ChatGPT (GPT-5)
 # ==========================================
 
 # ---------- Función para verificar errores ----------
