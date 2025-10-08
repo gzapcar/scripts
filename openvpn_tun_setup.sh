@@ -17,7 +17,7 @@ check_status() {
 echo -e "\033[34m=== Instalando paquetes necesarios ===\033[0m"
 opkg update
 check_status
-opkg install openvpn-easy-rsa openvpn-openssl luci-app-openvpn nano
+opkg install openvpn-easy-rsa openvpn-openssl luci-app-openvpn joe nano
 check_status
 
 echo -e "\033[32m- Instalación completada con éxito.\033[0m"
