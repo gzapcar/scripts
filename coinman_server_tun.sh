@@ -15,7 +15,7 @@ opkg update
 check_status
 
 # Instalar OpenVPN, herramientas necesarias y nano
-opkg install openvpn-easy-rsa openvpn-openssl luci-app-openvpn joe
+opkg install openvpn-easy-rsa openvpn-openssl luci-app-openvpn luci-i18n-openvpn-es luci-i18n-base-es luci-i18n-firewall-es joe
 check_status
 
 # Verificar la instalación
