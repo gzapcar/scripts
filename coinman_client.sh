@@ -13,8 +13,8 @@ opkg update
 check_status
 echo -e "\033[32m- La lista de paquetes ha sido actualizada correctamente.\033[0m"
 
-# Instalar OpenVPN, herramientas necesarias y nano
-opkg install openvpn-easy-rsa openvpn-openssl luci-app-openvpn nano
+# Instalar OpenVPN, herramientas necesarias, nano y joe
+opkg install openvpn-easy-rsa openvpn-openssl luci-app-openvpn nano joe
 check_status
 echo -e "\033[32m- OpenVPN, herramientas necesarias y nano han sido instalados correctamente.\033[0m"
 
