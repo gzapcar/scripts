@@ -15,12 +15,12 @@ opkg update
 check_status
 
 # Instalar OpenVPN, herramientas necesarias y nano
-opkg install openvpn-easy-rsa openvpn-openssl luci-app-openvpn nano
+opkg install openvpn-easy-rsa openvpn-openssl luci-app-openvpn luci-i18n-openvpn-es luci-i18n-base-es luci-i18n-firewall-es joe
 check_status
 
 # Verificar la instalación
 echo "- Paquetes instalados:"
-opkg list-installed | grep -E 'openvpn-easy-rsa|openvpn-openssl|luci-app-openvpn|nano'
+opkg list-installed | grep -E 'openvpn-easy-rsa | openvpn-openssl | luci-app-openvpn | luci-i18n-openvpn-es | luci-i18n-base-es | luci-i18n-firewall-es | joe'
 
 echo -e "\033[32m- Instalación completada.\033[0m"
 
@@ -87,6 +87,7 @@ config openvpn 'VPN_Tap_Server'
     option cert '/etc/openvpn/server.crt'
     option key '/etc/openvpn/server.key'
     option dh '/etc/openvpn/dh.pem'
+    option duplicate_cn '1'
 EOF
 check_status
 
